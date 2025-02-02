@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuvraj Dutta - Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+
+<body class="dark-mode">
+
+  <div class="container">
+    <div class="background-image">
+
+      <div class="typing-container">
+        <h1 class="typing">Yuvraj Dutta</h1>
+        <p class="quote">"Try, try and try but never step off!!"</p> <br>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="nav-btn" onclick="showSection('about')">About</button>
+        <button class="nav-btn" onclick="showSection('education')">
+          Education
+        </button>
+        <button class="nav-btn" onclick="showSection('projects')">
+          Projects
+        </button>
+        <button class="nav-btn" onclick="showSection('skills')">Skills</button>
+      </div>
+
+    </div>
+
+
+    <!-- About Section -->
+    <div id="about" class="section active">
+      <div class="profile-section">
+        <div class="profile-pic">
+          <img src="public/DP.jpg" alt="Yuvraj Dutta" class="profile-img" />
+        </div>
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p>Final Year ECE Student @ NIT Rourkela</p>
+          <p>📧 duttayuv.nitrkl@gmail.com</p>
+          <p>📱 +91 759 6871995</p>
+          <p>🚀 Passionate about Federated Learning & 5G Networks</p>
+        </div>
+      </div>
+
+      <div class="summary-section">
+        <h2>Summary</h2>
+        <p>
+          Deeply focused on federated learning related ML application of 5G
+          networks in order to improve Quality of Experience (QoE) under
+          various environments. Additionally, I have experience in Deep
+          Learning based complex time-series forecasting, focusing on
+          efficient predictions.
+        </p>
+      </div>
+      <div class="research-interests-section">
+        <h2>Research Interests</h2>
+        <p>
+          Federated Learning Based Machine Learning, Signal Processing, Image
+          Processing, Communication Systems.
+        </p>
+      </div>
+      <div class="achievements-section">
+        <h2>Achievements</h2>
+        <ul>
+          <li>
+            <strong>Indian Council For Cultural Relations Scholarship</strong><br />
+            India, July 2021<br />
+            Recipient of the ICCR Scholarship from Bangladesh, recognized for
+            outstanding academic achievements and dedication to cultural
+            exchange. This scholarship has enabled me to pursue higher
+            education in India, furthering my commitment to international
+            cooperation and cross-cultural understanding.
+          </li>
+          <li>
+            <strong>Higher Secondary Scholarship</strong><br />
+            Received Higher Secondary Exam Scholarship, acknowledging academic
+            excellence.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div id="education" class="section">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>National Institute of Technology Rourkela</h3>
+        <p>B.Tech in ECE | Dec 2021 - Jun 2025</p>
+        <!-- <p>CGPA: 8.94/10</p> -->
+      </div>
+      <div class="edu-item">
+        <h3>Notre Dame College, Dhaka</h3>
+        <p>Higher Secondary in Formal Science | 2018-2020</p>
+        <!-- <p>GPA: 5.00/5.00</p> -->
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>FedLinkCast</h3>
+        <p>Federated Learning Framework for 5G throughput prediction</p>
+        <p>📅 May 2024 - July 2025</p>
+        <a href="">Ongoing...</a>
+      </div>
+
+      <div class="project-item">
+        <h3>Radar Signal Processing</h3>
+        <p>
+          Implementing Radar Signal Processing on S scan data, removing noise
+          from the experimental dataset.
+        </p>
+        <p>📅 September 2023 — January 2024</p>
+        <a href="https://github.com/YDT007/Radar-S-Scan-Data-Noise-Reduction" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-item">
+        <h3>PySim8051</h3>
+        <p>A Python based 8051 Parser</p>
+        <a href="https://github.com/YDT007/PySim8051" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-item">
+        <h3>Digital Thermometer</h3>
+        <p>
+          Design and develop a digital thermometer using the 8051
+          microcontroller with an LM35 temperature sensor and LCD display.
+        </p>
+        <p>📅 January 2024 — February 2024</p>
+        <a href="https://github.com/YDT007/Digital-Thermometer" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-item">
+        <h3>Multi Channel CSMA</h3>
+        <p>
+          Multi channel CSMA using the closed form Bethe approximation
+          framework to find the transmit intensities using the target service
+          rates.
+        </p>
+        <p>📅 May 2024 — July 2024</p>
+        <a href="https://github.com/YDT007/Multi-Channel-CSMA-" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-item">
+        <h3>Unified Amplitude Modulation</h3>
+        <p>A MATLAB based different amplitude modulation GUI.</p>
+        <a href="https://github.com/YDT007/Unified_Amplitude_Modulation" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+      <!-- <h2 class="center-text">Skills</h2> -->
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming</h3>
+          <div class="skill-item">Python</div>
+          <div class="skill-item">MATLAB</div>
+          <div class="skill-item">C</div>
+          <div class="skill-item">Assembly (8051)</div>
+          <div class="skill-item">Verilog</div>
+        </div>
+        <div class="skill-category">
+          <h3>Software</h3>
+          <div class="skill-item">Multisim</div>
+          <div class="skill-item">Simulink</div>
+          <div class="skill-item">ANSYS HFSS</div>
+        </div>
+        <div class="skill-category">
+          <h3>Libraries</h3>
+          <div class="skill-item">Flower</div>
+          <div class="skill-item">Ray</div>
+          <div class="skill-item">Matplotlib</div>
+          <div class="skill-item">Numpy</div>
+          <div class="skill-item">Pandas</div>
+          <div class="skill-item">PyTorch</div>
+          <div class="skill-item">Scikit-learn</div>
+          <div class="skill-item">OpenCV</div>
+        </div>
+        <div class="skill-category">
+          <h3>Microcontroller</h3>
+          <div class="skill-item">Arduino Uno</div>
+          <div class="skill-item">Raspberry Pi</div>
+          <div class="skill-item">Nvidia Jetson Nano</div>
+          <div class="skill-item">AT89C51</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js" defer></script>
+</body>
+
+</html>

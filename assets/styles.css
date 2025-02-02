@@ -1,0 +1,479 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1e1e1e;
+}
+
+/* Typing Animation */
+.typing-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.typing {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    border-right: 3px solid #e0e0e0;
+    animation: typing 2s steps(20), blink-caret 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Navigation */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    position: sticky;
+    top: 0;
+    background: #1e1e1e;
+    padding: 1rem;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background: #555;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background: #777;
+    transform: translateY(-2px);
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background: #3498db; */
+    background: #1f1d1d;
+    flex-shrink: 0;
+}
+
+/* Sections */
+.section {
+    display: none;
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.section.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #e0e0e0
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-buttons {
+        flex-wrap: wrap;
+    }
+
+    .nav-btn {
+        flex: 1 1 100%;
+        margin: 0.5rem 0;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .skill-category {
+        text-align: center;
+    }
+
+    .about-me {
+        margin-left: 20%;
+        padding-left: 20%;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .typing {
+        font-size: 2rem;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .profile-section {
+        padding: 1rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .about-me {
+        margin-left: 10%;
+        padding-left: 10%;
+    }
+}
+
+
+
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+
+.project-item {
+    background: #2e2e2e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.project-item h3 {
+    margin-bottom: 0.5rem;
+    color: #3498db;
+}
+
+.project-item p {
+    margin-bottom: 0.5rem;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.skill-item {
+    display: inline-block;
+    background: #2e2e2e;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 10%;
+    border: 1px solid #3498db;
+    color: #3498db;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.skill-item:hover {
+    background: #3498db;
+    color: #2e2e2e;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.about-me,
+.summary-section,
+.research-interests-section,
+.achievements-section {
+    margin-bottom: 2rem;
+}
+
+.about-me h2,
+.summary-section h2,
+.research-interests-section h2,
+.achievements-section h2 {
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.about-me p,
+.summary-section p,
+.research-interests-section p,
+.achievements-section ul {
+    margin-bottom: 1rem;
+}
+
+.about-me {
+    margin-left: 150px;
+    padding-left: 150px;
+}
+
+.achievements-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievements-section ul li {
+    margin-bottom: 1rem;
+}
+
+.achievements-section ul li strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+.quote {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-top: 1rem;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Skills Section */
+.skill-section {
+    margin-bottom: 2rem;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-item {
+    display: inline-block;
+    background: #2e2e2e;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 10%;
+    border: 1px solid #3498db;
+    color: #3498db;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.skill-item:hover {
+    background: #3498db;
+    color: #2e2e2e;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.edu-item {
+    margin-bottom: 2rem; 
+}
+
+.edu-item h3 {
+    margin-bottom: 1rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add background images to profile sections */
+/* #about .background-image {
+    background-image: url('/public/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #education .background-image {
+    background-image: url('/public/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #projects .background-image {
+    background-image: url('/public/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #skills .background-image {
+    background-image: url('/public/background3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  } */
+
+/* Add overlay for better text readability */
+/* .background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    border-radius: 10px;
+  } */
+
+/* Ensure content stays visible */
+/* .background-image > * {
+    position: relative;
+    z-index: 2;
+    color: white;
+} */
+
+
+
+
+
+
